@@ -1,0 +1,54 @@
+.hero {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  min-height: clamp(13rem, 27vw, 19rem);
+  place-items: center;
+  overflow: hidden;
+  padding: 2rem clamp(1rem, 5vw, 3rem);
+  background: #173b67;
+  color: #fff;
+  text-align: center;
+}
+
+.visual {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  display: block;
+}
+
+.image {
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero::after {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  background: linear-gradient(
+    110deg,
+    rgba(8, 24, 46, 0.62) 0%,
+    rgba(8, 24, 46, 0.42) 55%,
+    rgba(8, 24, 46, 0.3) 100%
+  );
+  content: "";
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: min(100%, var(--content-width));
+  justify-items: center;
+  gap: 0.8rem;
+  text-shadow: 0 2px 12px rgba(8, 24, 46, 0.45);
+}
+
+.title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.15;
+  text-wrap: balance;
+}
