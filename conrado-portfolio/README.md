@@ -4,7 +4,7 @@ Portfólio responsivo desenvolvido com Next.js, TypeScript e CSS Modules. O site
 
 ## Acessos
 
-- **Portfólio online:** ❌ PREENCHER LINK DO DEPLOY
+- **Portfólio online:** [portfolio-online-8j6q.vercel.app](https://portfolio-online-8j6q.vercel.app/)
 - **Repositório público:** [github.com/cschorn1/portfolio-online](https://github.com/cschorn1/portfolio-online)
 
 ## Executar localmente
@@ -49,5 +49,3 @@ npm run start
 - `public/`: imagens e outros arquivos estáticos.
 
 ## Informações pendentes
-
-- Link do deploy do portfólio.
